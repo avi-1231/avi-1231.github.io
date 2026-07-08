@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Lora:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* ── Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  margin: 0;
+  background: #f0f2f5;
+  color: #1a1a2e;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, #1a3d5d 0%, #0f2640 100%);
+  color: white;
+  padding: 48px 20px 32px;
+  text-align: center;
+  border-bottom: 3px solid rgba(255,255,255,0.08);
+}
+
+/* title: blueprint-style serif */
+header h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  margin: 0 0 6px;
+  font-size: 2.3rem;
+  letter-spacing: -0.3px;
+}
+
+header p {
+  margin: 0 0 24px;
+  opacity: 0.75;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* ── Nav: blueprint-style underline mono links ── */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  color: #d98b5f;
+  border-bottom-color: #d98b5f;
+}
+
+/* ── Sections ── */
+section {
+  padding: 48px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a3d5d;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e6ea;
+  letter-spacing: -0.3px;
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ── Cards── */
+.card {
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: default;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+.card p {
+  padding: 0 10px ;
+}
+
+/* ── Footer ── */
+footer {
+  background: linear-gradient(135deg, #1a3d5d 0%, #0f2640 100%);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+  padding: 24px 20px;
+  margin-top: 60px;
+  font-size: 0.875rem;
+}
+
+/* ── Lightbox ── */
+#lightbox {
+  position: fixed;
+  display: none;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}

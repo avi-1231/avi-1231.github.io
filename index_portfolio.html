@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avi Grant | GIS & Photography</title>
+  <link rel="stylesheet" href="style_portfolio.css" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f0acd461-0037-41c3-bf52-652a117dcd05"></script>
+</head>
+<body>
+
+<header>
+  <h1>Avi Grant</h1>
+  <p>GIS Master's Graduate | Photographer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gis">GIS Portfolio</a>
+    <a href="#photo">Photography</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a GIS professional passionate about using geospatial technology to solve environmental, infrastructure, and resilience challenges.
+    I have hands-on experience in ArcGIS and QGIS for tasks such as spatial analysis, fire and flood mapping, environmental vulnerability analysis, and Lidar processing. 
+    I earned a Masters in GIS and a Bachelors in Geospatial Data Science.
+    <br>
+    <br>
+    Outside of GIS, I enjoy photography, musuems, music and concerts, and traveling to new places.</p>
+</section>
+
+<section id="gis">
+  <h2>GIS Project Examples</h2>
+ <h3>Masters Capstone Spring 2025</h2>
+  <iframe src="https://storymaps.arcgis.com/stories/9068e9e9a08a486f81d18cefd78b9ef4?header" width="100%" height="800px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+  <div class="grid">
+    <div class="card">
+      <iframe src="/Files/NASA Presentation (1).pdf" width="100%" height="600px"> </iframe>
+      <p>Spring 2023 NASA Wildland Fire Management Program Internship project on fire anomalies and statistics in the Southeastern US</p>
+    </div>
+
+    <div class="card">
+      <iframe src="/Files/Geog654 Poster_Grant.pdf" width="100%" height="600px"> </iframe>
+      <p>GEOG 654 Class Project 2024: Flood Risk in Asheville, NC using Topographical Wetness Index and Hydrological Modeling</p>
+    </div>
+  </div>
+
+
+  <div class="card">
+      <iframe src="/Files/Geog660 Poster_Grant.pdf" width="100%" height="600px"> </iframe>
+      <p>GEOG 660 Class Project 2024: Grand Canyon Lidar Digital Terrain Model, Digital Surface Model and Canopy Height Model Analysis</p>
+    </div>
+</section>
+
+<section id="photo">
+  <h2>Photography</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="/Files/AG6_0501.JPG" onclick="openLightbox(this)" />
+      <p>Photo taken in Utah in October 2025</p>
+    </div>
+    <div class="card">
+      <img src="Files/AG6_0291.JPG" onclick="openLightbox(this)" />
+      <p>Photo from a Jeremy Zucker concert in September 2025</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/avi-grant-profile/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+</section>
+
+<footer>
+
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged photo" />
+</div>
+
+<script src="script_portfolio.js"></script>
+</body>
+</html>
